@@ -23,4 +23,24 @@
 
  echo '$exemplo_02 tem total de elementos ' . count($exemplo_02);
 
+// array associativo
+
+ $meses = array(  
+           "A"=> "Janeiro",
+           "B"=> "Fevereiro",
+           "C"=> "Março",
+           "D" => "Abril",
+           "E" => "Maio",
+           "F" => "Junho",
+           "G" =>"Julho",
+           "H" =>"Agosto",
+           "I" => "Setembro",
+           "J" => "Outubro",
+           "k" => "Novembro",
+           "l"  =>"Dezembro"
+ );
+
+ print_r($meses);
+
+
 ?>
