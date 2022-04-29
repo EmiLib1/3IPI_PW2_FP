@@ -46,16 +46,52 @@ Adicao($numero1, $numero2);
 
 $numeros = [10,4, 50, 10, 5];
 $op ="/";
-function CalArray($array ,$op){
+function CalArray($array){
     $soma = 0;
     foreach($array as $values ){
-        $soma = eval($soma $op $values); 
+        $soma +=  $values; 
     }
    echo $soma;
 }
 echo "<br>";
 CalArray($numeros);
 
+echo "<hr>";
+
+
+
+function Soma($arg, $arg2){
+  $resultado  = $arg + $arg2;
+  //echo resultado; // 300
+  return $resultado  ; 
+  // saida de um valor(variavel/array) 
+}
+
+$valor =  Soma(100, 200);
+echo Soma(20,100);
+echo $valor;
+/*
+  quero pegar o valor ? e continuar no 
+   script geral
+  */
+
+
+  // usar a função so para somar e valor
+  // retornado usar script global para fazer
+  // o calculo e o numero e par/ impar
+  function MsgNumero($arg){
+      if($arg != 0){
+          echo "Impar";
+      }else{
+          echo "Par";
+      }
+  }
+
+  $valores = Soma(300, 45);// retorno 345
+
+  if( ( $valores % 2) == 0 ){
+      
+  }
 
 
 
